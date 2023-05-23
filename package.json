@@ -1,33 +1,21 @@
 {
-  "name": "svelte",
+  "name": "portfolio-ring",
   "version": "1.0.0",
-  "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "rollup": "^1.10.1",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-svelte": "^6.1.1",
-    "rollup-plugin-terser": "^4.0.4",
-    "sirv-cli": "^0.3.1"
-  },
-  "dependencies": {
-    "rollup": "3.20.2",
-    "rollup-plugin-livereload": "2.0.5",
-    "rollup-plugin-svelte": "7.1.4",
-    "rollup-plugin-terser": "7.0.2",
-    "sirv-cli": "2.0.2",
-    "svelte": "3.59.1"
-  },
+  "description": "A rotating portfolio ring built with Svelte",
+  "main": "index.js",
   "scripts": {
     "build": "rollup -c",
-    "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild",
-    "start": "sirv public",
-    "start:dev": "sirv public --dev"
+    "dev": "rollup -c -w",
+    "start": "sirv public"
   },
-  "keywords": [
-    "svelte",
-    "starter"
-  ],
-  "description": "Svelte example starter project"
+  "devDependencies": {
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^1.0.0"
+  }
 }
